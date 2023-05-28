@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Player page</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 1%;
+            width: auto;
+            height: auto;
+
+        }
+
+        .player_container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+
+        .button {
+            flex-basis: 25%;
+            
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            border: solid gray;
+            margin-top: 20px;
+        }
+
+        .button img {
+            width: auto;
+            height: 70%;
+        }
+
+        .selection_container {
+            margin-top: 20px;
+            border: solid;
+            height: 500px;
+            width: auto;
+            padding: 10px;
+        }
+
+        .calculation_container {
+            background-color: aliceblue;
+            margin-top: 20px;
+            border: solid coral;
+
+            height: 500px;
+            width: 200px;
+            padding: 10px;
+
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-black">
+    <header class="bg-gray-950	py-36 m-2	">
+        <h1 class="font-bold text-8xl	text-center	text-orange-500	">Select Your Five </h1>
+        <p class="text-white text-center mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+            laboriosam quos, ipsum,
+            cupiditate sed autem aspernatur <br> modi ex amet tenetur eligendi. Vel explicabo neque fuga obcaecati
+            repudiandae sit facere iusto!</p>
+    </header>
+    <section class="container">
+        <div class="player_container">
+            <div class="button  ">
+                <img src="/images/3.jpeg" alt="Image 1"><br>
+                <h2 class="font-semibold	text-4xl	mx-28 	"><span id="player_1">Messi</span></h2>
+                <button id="btn1"
+                    class="mt-3 ml-8 bg-fuchsia-600 	px-24 py-2 text-white rounded  hover:bg-sky-700 text-2xl font-bold">
+                    SELECTE</button>
+            </div>
+            <div class="button  ">
+                <img src="/images/3.jpeg" alt="Image 1"><br>
+                <h2 class="font-semibold	text-4xl	mx-28 	"><span id="player_2">Naymar</span></h2>
+                <button id="btn2"
+                    class="mt-3 ml-8 bg-fuchsia-600 	px-24 py-2 text-white rounded  hover:bg-sky-700 text-2xl font-bold">
+                    SELECTE</button>
+            </div>
+            <div class="button  ">
+                <img src="/images/3.jpeg" alt="Image 1"><br>
+                <h2 class="font-semibold	text-4xl	mx-28 	"><span id="player_3">Ronaldo</span></h2>
+                <button id="btn3"
+                    class="mt-3 ml-8 bg-fuchsia-600 	px-24 py-2 text-white rounded  hover:bg-sky-700 text-2xl font-bold">
+                    SELECTE</button>
+            </div>
+            <div class="button  ">
+                <img src="/images/3.jpeg" alt="Image 1"><br>
+                <h2 class="font-semibold	text-4xl	mx-28 	"><span id="player_4">Mbappe</span></h2>
+                <button id="btn4"
+                    class="mt-3 ml-8 bg-fuchsia-600 	px-24 py-2 text-white rounded  hover:bg-sky-700 text-2xl font-bold">
+                    SELECTE</button>
+            </div>
+            <div class="button  ">
+                <img src="/images/3.jpeg" alt="Image 1"><br>
+                <h2 class="font-semibold	text-4xl	mx-28 	"><span id="player_5">Md.Sala</span></h2>
+                <button id="btn5"
+                    class="mt-3 ml-8 bg-fuchsia-600 	px-24 py-2 text-white rounded  hover:bg-sky-700 text-2xl font-bold">
+                    SELECTE</button>
+            </div>
+            <div class="button  ">
+                <img src="/images/3.jpeg" alt="Image 1"><br>
+                <h2 class="font-semibold	text-4xl	mx-28 	"><span id="player_6">Robert</span></h2>
+                <button id="btn6"
+                    class="mt-3 ml-8 bg-fuchsia-600 	px-24 py-2 text-white rounded  hover:bg-sky-700 text-2xl font-bold">
+                    SELECTE</button>
+            </div>
+            <div class="button  ">
+                <img src="/images/3.jpeg" alt="Image 1"><br>
+                <h2 class="font-semibold	text-4xl	mx-28 	"><span id="player_7">Messi</span></h2>
+                <button id="btn7"
+                    class="mt-3 ml-8 bg-fuchsia-600 	px-24 py-2 text-white rounded  hover:bg-sky-700 text-2xl font-bold">
+                    SELECTE</button>
+            </div>
+            <div class="button  ">
+                <img src="/images/3.jpeg" alt="Image 1"><br>
+                <h2 class="font-semibold	text-4xl	mx-28 	"><span id="player_8">Pele</span></h2>
+                <button id="btn8"
+                    class="mt-3 ml-8 bg-fuchsia-600 	px-24 py-2 text-white rounded  hover:bg-sky-700 text-2xl font-bold">
+                    SELECTE</button>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- Selected player section start -->
+        <div class="selection_container border-teal-400	">
+            <h1 class="font-semibold text-white text-5xl "> Selected </h1><br><br>
+            <h2 id="selection_1" class="text-white text-3xl ml-8	"></h2>
+            <h2 id="selection_2" class="text-white text-3xl ml-8	"></h2>
+            <h2 id="selection_3" class="text-white text-3xl ml-8	"></h2>
+            <h2 id="selection_4" class="text-white text-3xl ml-8	"></h2>
+            <h2 id="selection_5" class="text-white text-3xl ml-8	"></h2>
+            <h2 id="selection_6" class="text-white text-3xl ml-8	"></h2>
+            <h2 id="selection_7" class="text-white text-3xl ml-8	"></h2>
+            <h2 id="selection_8" class="text-white text-3xl ml-8	"></h2>
+        </div> <!-- Selected player section close -->
+
+        <!-- Calculation section Start -->
+
+        <section>
+            <div class="calculation_container">
+                <!-- Calculate button start -->
+                <h1 class="font-semibold  text-5xl pb-10 ">Budget</h1>
+                <label class=" font-medium  " for="">Per Player</label>
+                <input id="perPlayer_cost_field" class="w-24 p-2" type="text" name="" placeholder="  1000 BDT">
+                <center><button id="calculate_btn"
+                        class="bg-orange-500 mt-3 w-32 py-1 rounded font-medium text-white ">Calculate</button></center>
+                <!-- Calculate button closed -->
+
+                <!-- Pre player cost  -->
+                <h1 class="font-medium   mt-3">Player Cost : <span id="total_player_cost"> 00 </span> BDT</h1>
+                
+                <!-- manager and coach cost  --> <br>
+                    <!-- coach  -->
+                <label id="" class=" font-medium  " for="">Coach :</label>
+                <input id="coach_field" class="w-24 p-2 ml-5 mb-2" type="text" name="" placeholder="00 BDT">
+                   <!-- coach  -->
+                
+                   <!-- Manager -->
+                <label class=" font-medium  " for="">Manager :</label>
+                <input id="manager_filed" class="w-24 p-2" type="text" name="" placeholder="00 BDT">
+                <!-- Manager -->
+
+                <center><button id="calculateTotal_btn"
+                class="bg-orange-500 mt-3 w-32 py-1 rounded font-medium text-white ">Calculate Total</button></center>
+                <br>
+                <h2 class="font-semibold text-xl mt-3
+                ">Total:<span id="total_cost" class="text-orange-600 ml-3">00000</span> BDT</h2>
+            </div> 
+        </section>
+
+        
+
+
+    </section>
+    <script src="/js/selection.js"></script> <!-- js folder linked -->
+</body>
+
+</html>
+
+<!-- finfidhid -->
